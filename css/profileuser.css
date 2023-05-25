@@ -1,0 +1,73 @@
+
+.imgcircel{
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ced4da;
+    margin-left: 75px;
+    margin-top: 20px;
+    border-radius: 60px;
+
+    
+
+}
+
+.nav-left{
+    width: 23%;
+    height: 850px;
+    background-color: #235cb1;
+    
+    
+}
+.logos h5{
+    margin-left: 55px;
+    margin-top: 7px;
+    color: white;
+}
+.leslink{
+    
+    margin-top: 45px;
+}
+.leslink li{
+  list-style: none;
+  padding-top: 15px;
+}
+.leslink li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+.leslink li a img{
+   margin-top: -8px;
+  
+}
+.herer{
+    width:85% ;
+}
+
+
+.container-center{
+    margin-left: 355px;
+    margin-top: -850px;
+    height: 950px;
+}
+
+
+.connom{
+    
+    margin: 30px;
+    margin-top: 40px;
+    text-align: center;
+  
+}
+.connom .animation{
+    
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background:blue;
+    width: 480px;
+    border-radius: 8px;
+    margin-top: 6px;
+    transition: all 0.5s ease 0s;
+
+}

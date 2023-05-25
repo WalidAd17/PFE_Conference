@@ -1,0 +1,78 @@
+
+
+.logo_conference{
+    height: 100px;
+
+    display: flex;
+    
+}
+.logo{
+    
+    height:100px;
+    width: 50px;
+
+}
+.nave_bott{
+    height: 60px;
+
+    margin-top: -20px;
+    
+}
+a.active{
+    color: #3452b5;
+   
+}
+
+
+
+/* ================================================= */
+/* --------------- Call To Action Style ------------ */
+/* ================================================= */
+
+#call-to-action {
+    padding: 80px 0 90px 0;
+    background: #D2691E;
+}
+
+#call-to-action h3 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+#call-to-action .cta-btn {
+    display: inline-block;
+    padding: 8px 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #D2691E;
+    background: #ffffff;
+}
+
+#call-to-action .cta-btn:hover {
+    color: #ffffff;
+    background: #222222;
+}
+
+@media (max-width: 767.98px) {
+    #call-to-action h3 {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+    
+    #call-to-action .cta-btn {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #call-to-action h3 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    
+    #call-to-action .cta-btn {
+        font-size: 20px;
+    }
+}

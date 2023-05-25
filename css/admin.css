@@ -1,0 +1,406 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+  
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    
+}
+
+/********************************pour le sidebar **********************/
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    border-left: 10px solid #fff;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation.active{
+    width: 80px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.navigation ul li:hover,
+.navigation ul li.hovered{
+    background-color: #3452b5;
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+pointer-events: none;
+
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color:#3452b5 ;
+}
+.navigation ul li:hover a,
+.navigation ul li.hovered a{
+    color: #fff;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon .icones{
+    font-size: 22px;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+/************************pour le main**********************/
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+   background-color: aliceblue;
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 80px);
+    left: 80px;
+}
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background: #fff;
+}
+.toggle{
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+.search{
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+.search label{
+    position: relative;
+    width: 100%;
+
+}
+.search label input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #ced4da;
+}
+.search label .seraicon{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 18px;
+    color: #2a2185;
+}
+.user{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.user img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/**********************************pour les card dans le main******************************/
+.cardbox{
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    
+
+}
+.cardbox .card{
+   position: relative;
+   width: 22%;
+    background: #fff;
+    padding: 30px;
+    margin: 12px;
+    display: inline-block;
+    border-radius: 20px;
+   justify-content: space-between;
+   cursor: pointer;
+    box-shadow: 0px 7px 25px rgba(0, 0,0, 0.08);
+}
+
+.cardbox .card .numbers{
+   position: relative;
+   font-weight: 500;
+   font-size: 25px;
+   color: #2a2185;
+}
+
+.cardbox .card .cardname{
+    color: #999;
+    font-size: 18px;
+    margin-top: 15px;
+    
+ 
+}
+
+.cardbox .card .iconbx{
+    position: absolute;
+    top: 27px;
+    left: 160px;
+    font-size: 35px;
+    color: #999;
+}
+
+.cardbox .card:hover{
+    background-color: #2a2185;
+}
+.cardbox .card:hover .numbers,
+.cardbox .card:hover .cardname,
+.cardbox .card:hover .iconbx{
+    color: #fff;
+}
+
+
+
+/******************************pour table***************************/
+
+
+
+.details{
+    position: relative;
+     width: 100%;
+    padding: 20px;
+   
+    
+   
+}
+.details .recentorder{
+    position: relative;
+    width: 59%;
+    min-height: 500px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0,0, 0.08);
+    border-radius: 20px;
+    display: inline-block;
+}
+.recentorder .cardorder{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.recentorder .cardorder h2{
+  font-weight: 600;
+  color: #2a2185;
+
+
+}
+
+.recentorder .cardorder .btn{
+    position: relative;
+    padding: 5px 10px;
+    background: #2a2185;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+
+}
+
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+   margin-top: 30px;
+    
+}
+
+.details table thead td{
+    font-weight: 700;
+
+}
+
+.details .recentorder table tr{
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   
+
+}
+.details .recentorder table  tr:last-child{
+    border-bottom: none;
+}
+
+.details .recentorder table tbody tr:hover{
+    background: #2a2185;
+    color: #fff;
+}
+
+.details .recentorder table tr td{
+    padding: 20px;
+
+}
+.details .recentorder table tr td:last-child{
+    text-align: end;
+
+}
+.details .recentorder table tr td:nth-child(2){
+    text-align: end;
+}
+.details .recentorder table tr td:nth-child(3){
+    text-align: center;
+}
+
+
+
+.status {
+    padding: 2px 4px;
+    background:#f00;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+/*******************************************pour les message*******************************/
+.details .recentmessage{
+    position: relative;
+    display: inline-block;
+    width: 39%;
+    min-height: 500px;
+    background: #fff;
+    margin-left: 9px;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0,0, 0.08);
+    border-radius: 20px;
+}
+
+
+
+/********************************************pour le responsive************************************/
+
+@media(max-width:991px){
+    .navigation{
+        left: -300px;
+
+    }
+    .navigation.active{
+        width: 300px;
+        left: 0;
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    .main.active{
+        left: 300px;
+
+    }
+    .cardbox .card{
+        flex-direction: column;
+        width: 45%;
+    }
+}
+
+@media(max-width:680px){
+    .navigation{
+        left: -300px;
+
+    }
+    .navigation.active{
+        width: 300px;
+        left: 0;
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    .main.active{
+        left: 300px;
+
+    }
+    .cardbox .card{
+        flex-direction: column;
+        width: 80%;
+        margin-left: 30px;
+    }
+    .cardbox .card .iconbx{
+        margin-left: 170px;
+    }
+    .details .recentorder{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .details .recentmessage{
+        width: 97%;
+    }
+}
